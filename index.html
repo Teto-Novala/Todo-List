@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Book List</h1>
+    </header>
+    <main>
+      <div class="content">
+        <h2>Masukkan Buku</h2>
+        <form id="form">
+          <div class="item">
+            <label for="inputJudul">Judul Buku</label>
+            <input
+              type="text"
+              name="JudulBuku"
+              id="inputJudul"
+              placeholder="Judul buku"
+            />
+          </div>
+          <div class="item">
+            <label for="inputAuthor">Author</label>
+            <input
+              type="text"
+              name="Author"
+              id="inputAuthor"
+              placeholder="Nama Author"
+            />
+          </div>
+          <div class="item">
+            <label for="inputTahun">Tahun</label>
+            <input
+              type="number"
+              name="tahun"
+              id="inputTahun"
+              placeholder="Tahun"
+            />
+          </div>
+          <!-- submit -->
+          <div class="item">
+            <input type="submit" value="Simpan" id="submit" />
+          </div>
+        </form>
+
+        <section id="belumDibaca">
+          <h2>Belum Selesai dibaca</h2>
+          <div id="addList"></div>
+        </section>
+
+        <section id="sudahDibaca">
+          <h2>Sudah Dibaca</h2>
+          <div id="completedList"></div>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

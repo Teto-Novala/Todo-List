@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #57C0BA;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* main */
+.content{
+    width: 60%;
+    background-color: rgba(128, 128, 128, 0.1);
+    margin: auto;
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* form */
+#formList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input {
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background-color: rgb(218, 218, 218);
+    padding: 1rem;
+}
+
+#submit {
+    margin-top: 17px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#submit:hover {
+    background-color: #57C0BA;
+}
+
+/* rak */
+
+#belumDibaca, #sudahDibaca {
+    padding-top: 30px;
+}
+
+#addList, #completedList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.inner-list {
+    background-color: rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-list p {
+    font-size: .8rem;
+}
+
+.check-button, .trash-button, .undo-button {
+    padding: 9px;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.trash-span {
+    font-size: 1rem;
+    font-weight: 590;
+}
+
+.check-button:hover, .trash-button:hover, .undo-button:hover {
+    background-color: gray;
+}
+
+.container-button {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* responsive */
+@media screen and (max-width : 320px) {
+    header {
+        text-align: start;
+        padding-left: 5px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: start;
+    }
+
+    .container-button{
+        width: 30%;
+    }
+}
